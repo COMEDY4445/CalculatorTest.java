@@ -1,6 +1,6 @@
 
 public class CheckNumber {
-    //Создаем етод который проверяет арабские это числа или нет.
+    //Создаем метод который проверяет арабские это числа или нет.
     //Если да, то парсим их в инты и проверяе их что бы они были не больше 10 и не меньше 0
     public static boolean isArabic(String n1, String n2) {
         int n_1;
@@ -12,7 +12,7 @@ public class CheckNumber {
         } catch (Exception e) {
             return false;
         }
-        if ((n_1 > 0 && n_1 <= 10) && (n_2 > 0 && n_2 < 10)) {
+        if ((n_1 > 0 && n_1 <= 10) && (n_2 > 0 && n_2 <= 10)) {
             return true;
         }
         else {
@@ -24,7 +24,6 @@ public class CheckNumber {
     //Создаем метод который проверяет Римские это числа или нет.
     //Если да, то
     public static boolean isRome(String n1, String n2) {
-
         if (RomeNumber.convertRomToArab(n1) > 0 && RomeNumber.convertRomToArab(n2) > 0) {
             return true;
         }
